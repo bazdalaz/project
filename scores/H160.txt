@@ -1,18 +1,12 @@
-H160
-DATASET=train; MAX_HEAD_PRESSURE=400; MIN_HEAD_TEMPERATURE=45; MIN_WEIGHT=1400; DELTA_TIME=2; DELTA_TEMP=1
-Threshold= 0.5
-features=['phase', 'heat_time', 'weight', 'head_temp', 'head_pressure', 'vac_temp', 'phase_20', 'heat_time_20', 'weight_20', 'head_temp_20', 'head_pressure_20', 'vac_temp_20', 'phase_30', 'heat_time_30', 'weight_30', 'head_temp_30', 'head_pressure_30', 'vac_temp_30', 'phase_35', 'heat_time_35', 'weight_35', 'head_temp_35', 'head_pressure_35', 'vac_temp_35', 'phase_40', 'heat_time_40', 'weight_40', 'head_temp_40', 'head_pressure_40', 'vac_temp_40']
+H160, test, accuracy: 0.8671965878247383
               precision    recall  f1-score   support
 
-   Not Ready       0.71      0.78      0.74     92996
-       Ready       0.86      0.81      0.83    153866
+   Not Ready       0.82      0.98      0.90      3136
+       Ready       0.96      0.67      0.79      2022
 
-    accuracy                           0.80    246862
-   macro avg       0.78      0.79      0.79    246862
-weighted avg       0.80      0.80      0.80    246862
+    accuracy                           0.86      5158
+   macro avg       0.89      0.83      0.84      5158
+weighted avg       0.88      0.86      0.86      5158
 
-[[ 72494  20502]
- [ 29952 123914]]
-ready
-1        153866
-0         92996
+[[3086   50]
+ [ 661 1361]]

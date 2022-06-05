@@ -1,36 +1,12 @@
-H161
-DATASET=test; MAX_HEAD_PRESSURE=560; MIN_HEAD_TEMPERATURE=50; MIN_WEIGHT=1400; DELTA_TIME=2; DELTA_TEMP=1
-Threshold= 0.5
-features=['batch', 'heat_time', 'weight', 'head_temp', 'head_pressure', 'vac_temp', 'heat_time_20', 'weight_20', 'head_temp_20', 'head_pressure_20', 'vac_temp_20', 'heat_time_30', 'weight_30', 'head_temp_30', 'head_pressure_30', 'vac_temp_30', 'heat_time_35', 'weight_35', 'head_temp_35', 'head_pressure_35', 'vac_temp_35', 'heat_time_40', 'weight_40', 'head_temp_40', 'head_pressure_40', 'vac_temp_40']
+H161, test, accuracy: 0.9266856938993935
               precision    recall  f1-score   support
 
-   Not Ready       0.89      0.68      0.77      2735
-       Ready       0.87      0.96      0.92      6263
+   Not Ready       0.87      0.78      0.82      1128
+       Ready       0.95      0.97      0.96      4478
 
-    accuracy                           0.88      8998
-   macro avg       0.88      0.82      0.84      8998
-weighted avg       0.88      0.88      0.87      8998
+    accuracy                           0.93      5606
+   macro avg       0.91      0.88      0.89      5606
+weighted avg       0.93      0.93      0.93      5606
 
-[[1854  881]
- [ 233 6030]]
-ready
-1        6263
-0        2735
-
-DATASET=test; MAX_HEAD_PRESSURE=400; MIN_HEAD_TEMPERATURE=45; MIN_WEIGHT=1400; DELTA_TIME=2; DELTA_TEMP=1
-Threshold= 0.5
-features=['phase', 'heat_time', 'weight', 'head_temp', 'head_pressure', 'vac_temp', 'phase_20', 'heat_time_20', 'weight_20', 'head_temp_20', 'head_pressure_20', 'vac_temp_20', 'phase_30', 'heat_time_30', 'weight_30', 'head_temp_30', 'head_pressure_30', 'vac_temp_30', 'phase_35', 'heat_time_35', 'weight_35', 'head_temp_35', 'head_pressure_35', 'vac_temp_35', 'phase_40', 'heat_time_40', 'weight_40', 'head_temp_40', 'head_pressure_40', 'vac_temp_40']
-              precision    recall  f1-score   support
-
-   Not Ready       0.73      0.83      0.78      3771
-       Ready       0.87      0.79      0.83      5374
-
-    accuracy                           0.80      9145
-   macro avg       0.80      0.81      0.80      9145
-weighted avg       0.81      0.80      0.81      9145
-
-[[3118  653]
- [1134 4240]]
-ready
-1        5374
-0        3771
+[[ 883  245]
+ [ 131 4347]]

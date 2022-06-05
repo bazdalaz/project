@@ -1,33 +1,25 @@
-DATASET=train; MAX_HEAD_PRESSURE=400; MIN_HEAD_TEMPERATURE=45; MIN_WEIGHT=1400; DELTA_TIME=1; DELTA_TEMP=1
-Threshold= 0.5
-features=['phase', 'heat_time', 'weight', 'head_temp', 'head_pressure', 'vac_temp', 'phase_20', 'heat_time_20', 'weight_20', 'head_temp_20', 'head_pressure_20', 'vac_temp_20', 'phase_30', 'heat_time_30', 'weight_30', 'head_temp_30', 'head_pressure_30', 'vac_temp_30', 'phase_35', 'heat_time_35', 'weight_35', 'head_temp_35', 'head_pressure_35', 'vac_temp_35', 'phase_40', 'heat_time_40', 'weight_40', 'head_temp_40', 'head_pressure_40', 'vac_temp_40']
+H103, test, accuracy: 0.8306525037936268
               precision    recall  f1-score   support
 
-   Not Ready       0.92      0.83      0.88     54764
-       Ready       0.84      0.93      0.88     51262
+   Not Ready       0.60      0.94      0.73      1019
+       Ready       0.96      0.72      0.82      2276
 
-    accuracy                           0.88    106026
-   macro avg       0.88      0.88      0.88    106026
-weighted avg       0.88      0.88      0.88    106026
+    accuracy                           0.78      3295
+   macro avg       0.78      0.83      0.78      3295
+weighted avg       0.85      0.78      0.79      3295
 
-[[45656  9108]
- [ 3753 47509]]
-ready
-0        54764
-1        51262
+[[ 953   66]
+ [ 643 1633]]
 
-DATASET=train; MAX_HEAD_PRESSURE=400; MIN_HEAD_TEMPERATURE=45; MIN_WEIGHT=1400; DELTA_TIME=1; DELTA_TEMP=1
-Threshold= 0.5
-features=['phase', 'heat_time', 'weight', 'head_temp', 'head_pressure', 'vac_temp', 'phase_20', 'heat_time_20', 'weight_20', 'head_temp_20', 'head_pressure_20', 'vac_temp_20', 'phase_30', 'heat_time_30', 'weight_30', 'head_temp_30', 'head_pressure_30', 'vac_temp_30', 'phase_35', 'heat_time_35', 'weight_35', 'head_temp_35', 'head_pressure_35', 'vac_temp_35', 'phase_40', 'heat_time_40', 'weight_40', 'head_temp_40', 'head_pressure_40', 'vac_temp_40']
-H103 threshold=0.5
+ H103, train, accuracy: 0.8230038022813688
               precision    recall  f1-score   support
 
-   Not Ready       0.92      0.84      0.88     54764
-       Ready       0.84      0.92      0.88     51262
+   Not Ready       0.84      0.82      0.83     42911
+       Ready       0.76      0.78      0.77     30729
 
-    accuracy                           0.88    106026
-   macro avg       0.88      0.88      0.88    106026
-weighted avg       0.88      0.88      0.88    106026
+    accuracy                           0.80     73640
+   macro avg       0.80      0.80      0.80     73640
+weighted avg       0.81      0.80      0.80     73640
 
-[[45740  9024]
- [ 3867 47395]]
+[[35211  7700]
+ [ 6736 23993]]
